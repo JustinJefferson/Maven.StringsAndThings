@@ -30,9 +30,25 @@ public class GIsHappyTest {
         Assert.assertFalse(actual);
     }
 
+
+
+    // Assertion in this test is wrong. Last g is not happy according to instructions
     @Test
     public void gIsHappyTest3(){
         Boolean actual = stringsAndThings.gIsHappy("xxggyygxx");
+        Assert.assertTrue(actual);
+    }
+
+    // Adding Tests for Practice
+    @Test
+    public void gIsHappyTest4(){
+        Boolean actual = stringsAndThings.gIsHappy("kgjhggowjdgwkdu");
+        Assert.assertFalse(actual);
+    }
+
+    @Test
+    public void gIsHappyTest5(){
+        Boolean actual = stringsAndThings.gIsHappy("gghhggiixxgg");
         Assert.assertTrue(actual);
     }
 
